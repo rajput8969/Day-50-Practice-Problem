@@ -1,0 +1,16 @@
+create database EmployeePayRollDB;
+
+use EmployeePayRollDB;
+create table EmployeeTB
+(
+id  int primary key identity,
+Name varchar(max) not null,
+Gender bit not null,
+Department varchar(max) not null,
+Salary int not null,
+StartDate datetime not null,
+)
+insert into EmployeeTB(Name,Gender,Department,Salary,StartDate) values('Ashok',1,'IT',60000,'2022-05-04 19:29:49.797'),('Rajesh',1,'HR',60000,'2022-05-04 19:29:49.797'),
+			('Ramesh',1,'IT',63500,'2022-05-04 19:29:49.797'),('Priya',0,'HR',50000,'2022-05-04 19:29:49.797');
+
+			select * from EmployeeTB;
